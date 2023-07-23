@@ -24,9 +24,9 @@
   <body class="font">
     <header class="mb-[12rem]">
       <!-- navbar starts here -->
-      <nav class="w-full bg-black py-8 px-[6rem]">
+      <nav class="w-full bg-black py-8 px-4 md:px-[6rem]">
         <!-- brandlogo -->
-        <div class="flex items-center justify-center gap-2 mb-5">
+        <div class="flex items-center justify-center gap-2 mb-8 md:mb-5">
           <img
             class="block h-[2.5rem]"
             src="./assets/logo.webp"
@@ -40,7 +40,9 @@
         </div>
 
         <!-- navigation -->
-        <ul class="flex gap-5 mx-auto w-max">
+        <ul
+          class="grid grid-cols-2 justify-items-center gap-y-5 md:flex md:gap-5 md:mx-auto md:w-max"
+        >
           <li>
             <a
               class="text-white text-md transition-all duration-200 hover:text-gray-400"
@@ -75,35 +77,49 @@
       <!-- banner -->
       <section class="xl:max-w-full 2xl:max-w-[120rem] mx-auto">
         <div class="w-full relative">
-          <video
-            class="banner-video"
-            autoplay
-            muted
-            loop
-            src="./assets/video/mercedes-web.mp4"
-          ></video>
+          <div class="sm:aspect-[16/12] sm:overflow-hidden md:hidden">
+            <img
+              class="block w-full sm:object-none sm:object-[50%,300%]"
+              src="./assets/banner.webp"
+              alt="mercedes"
+            />
+          </div>
 
-          <button
-            class="text-white sound-button absolute text-[1.4rem] bottom-0 right-0 z-20 px-4 py-4 capitalize"
-          >
-            Turn sound on
-          </button>
+          <div class="relative">
+            <video
+              class="banner-video hidden md:block"
+              autoplay
+              muted
+              loop
+              src="./assets/video/mercedes-web.mp4"
+            ></video>
 
-          <!-- overlay -->
-          <div
-            class="absolute bg-[rgba(0,0,0,0.3)] top-0 left-0 w-full h-full"
-          ></div>
+            <!-- overlay -->
+            <div
+              class="hidden md:block absolute bg-[rgba(0,0,0,0.3)] top-0 left-0 w-full h-full"
+            ></div>
+
+            <button
+              class="text-white sound-button absolute text-[1.4rem] bottom-0 right-0 z-20 px-4 py-4 capitalize hidden md:block"
+            >
+              Turn sound on
+            </button>
+          </div>
 
           <!-- banner text -->
           <div
-            class="absolute top-1/2 -translate-y-1/2 left-[6rem] bg-[rgba(0,0,0,0.6)] w-max p-6"
+            class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-[5%] bg-black lg:bg-[rgba(0,0,0,0.6)] lg:w-max py-5 px-2 md:p-6"
           >
-            <h1 class="text-7xl text-white mb-2 font-semibold">
+            <h1
+              class="text-5xl text-center md:text-left md:text-6xl 2xl:text-7xl text-white mb-2 font-semibold"
+            >
               Explore <br />
               The Unknown
             </h1>
 
-            <p class="text-white mb-6">
+            <p
+              class="text-xs text-center md:text-left md:text-base text-white mb-6"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
               Repudiandae dolorum inventore veritatis consequatur quod <br />
               a eligendi. Ex laboriosam deleniti tempora.
@@ -111,7 +127,7 @@
 
             <a
               href="#"
-              class="inline-block text-lg text-white py-3 px-6 border hover:bg-white hover:text-black transition-all duration-300"
+              class="block w-max mx-auto md:mx-0 md:inline-block text-lg text-white py-3 px-6 border hover:bg-white hover:text-black transition-all duration-300"
               >Explore</a
             >
           </div>
@@ -198,7 +214,9 @@
       </section>
 
       <!-- electric -->
-      <section class="w-full relative mb-[10rem]">
+      <section
+        class="relative mb-[10rem] xl:max-w-full 2xl:max-w-[120rem] mx-auto"
+      >
         <div
           class="absolute top-1/2 -translate-y-1/2 left-[6rem] bg-[rgba(0,0,0,0.6)] w-max p-6"
         >
