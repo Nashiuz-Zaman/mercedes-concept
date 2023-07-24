@@ -204,6 +204,7 @@
             >Explore Designs</a
           >
         </div>
+
         <div class="relative">
           <img
             loading="lazy"
@@ -222,17 +223,27 @@
       </section>
 
       <!-- electric -->
-      <!-- <section
+      <section
         class="relative mb-[10rem] xl:max-w-full 2xl:max-w-[120rem] mx-auto"
       >
         <div
-          class="absolute top-1/2 -translate-y-1/2 left-[6rem] bg-[rgba(0,0,0,0.6)] w-max p-6"
-        >
-          <h2 class="text-7xl text-white mb-2 font-semibold capitalize">
-            The future <br />is electric
-          </h2>
+          class="overflow-hidden aspect-[16/13] md:aspect-[16/9] lg:aspect-[16/8] xl:aspect-[16/6] bg-cover bg-center"
+          style="background-image: url('./assets/future.webp')"
+        ></div>
 
-          <p class="text-white mb-6">
+        <div
+          class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-[5%] bg-black lg:bg-[rgba(0,0,0,0.6)] lg:w-max py-5 px-2 md:p-6"
+        >
+          <h1
+            class="text-5xl text-center md:text-left md:text-6xl 2xl:text-7xl text-white mb-2 font-semibold capitalize"
+          >
+            The future <br />
+            is electric
+          </h1>
+
+          <p
+            class="text-xs text-center md:text-left md:text-base text-white mb-6"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
             Repudiandae dolorum inventore veritatis consequatur quod <br />
             a eligendi. Ex laboriosam deleniti tempora.
@@ -240,22 +251,17 @@
 
           <a
             href="#"
-            class="inline-block text-lg text-white py-3 px-6 border hover:bg-white hover:text-black transition-all duration-300"
-            >Browse Electric Vehicles</a
+            class="block w-max mx-auto md:mx-0 md:inline-block text-lg text-white py-3 px-6 border hover:bg-white hover:text-black transition-all duration-300 capitalize"
+            >Browse electric vehicles</a
           >
         </div>
-
-        <div
-          class="overflow-hidden aspect-[16/6] bg-cover bg-center"
-          style="background-image: url('./assets/future.webp')"
-        ></div>
-      </section> -->
+      </section>
 
       <!-- meet the leaders section -->
-      <!-- <section
-        class="max-w-screen-xl mx-auto grid grid-cols-2 items-center gap-8 mb-[10rem]"
+      <section
+        class="max-w-screen-xl mx-auto grid grid-cols-1 px-4 xl:px-0 md:grid-cols-2 items-center gap-8 mb-[10rem]"
       >
-        <div class="flex flex-col gap-2">
+        <div class="hidden md:flex flex-col gap-2">
           <img
             class="w-full shadow-xl"
             loading="lazy"
@@ -270,11 +276,30 @@
             alt="car interiors"
           />
         </div>
+
         <div>
-          <h2 class="text-5xl mb-6 capitalize font-semibold text-center">
+          <h2
+            class="text-4xl md:text-5xl mb-6 capitalize font-semibold text-center"
+          >
             Meet the leaders of formula 1 racing
           </h2>
-          <p class="text-lg mb-6 text-center">
+          <div class="flex flex-col gap-4 mb-6 md:hidden">
+            <img
+              class="w-full shadow-xl"
+              loading="lazy"
+              src="./assets/f1-cars.webp"
+              alt="car interiors"
+            />
+
+            <img
+              class="w-full shadow-xl"
+              loading="lazy"
+              src="./assets/f1-team.webp"
+              alt="car interiors"
+            />
+          </div>
+
+          <p class="texdt-md md:text-lg mb-6 text-center">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Necessitatibus placeat est veniam tempore quaerat. Placeat
             consequatur neque alias expedita sint!
@@ -286,20 +311,29 @@
             >Sign up</a
           >
         </div>
-      </section> -->
+      </section>
 
       <!-- form section-->
-      <!-- <section class="lg:relative 2xl:max-w-screen-xl mx-auto mb-[10rem]">
-  
+      <section
+        class="px-4 lg:px-0 space-y-5 md:space-y-0 md:relative 2xl:max-w-screen-xl mx-auto mb-[10rem]"
+      >
+        <div class="w-full aspect-[16/10] lg:aspect-[16/7] lg:overflow-hidden">
+          <img
+            class="w-full h-full object-cover"
+            src="./assets/lewis.webp"
+            alt="Lewis hamilton"
+          />
+        </div>
+
         <div
-          class="lg:absolute bg-[rgba(0,0,0,0.7)] z-10 p-10 lg:top-1/2 lg:right-[6%] lg:-translate-y-1/2"
+          class="md:absolute bg-black z-10 p-10 md:top-1/2 md:right-[6%] md:-translate-y-1/2"
         >
           <h2 class="text-3xl text-white mb-6 capitalize text-center">
             Enter for a chance <br />
             to meet Lewis hamilton
           </h2>
 
-          <form method="post">
+          <form>
             <label class="flex gap-2 items-center mb-4"
               ><span class="text-white">Name:</span>
               <input
@@ -327,18 +361,10 @@
             </button>
           </form>
         </div>
-
-        <div class="w-full lg:aspect-[16/7] lg:overflow-hidden">
-          <img
-            class="object-cover"
-            src="./assets/lewis.webp"
-            alt="Lewis hamilton"
-          />
-        </div>
-      </section> -->
+      </section>
     </main>
 
-    <!-- <footer class="bg-black py-[5rem]">
+    <footer class="bg-black py-[3rem] lg:py-[5rem]">
       <div class="flex flex-col items-center justify-center gap-2 mb-14">
         <img
           class="block h-[2.5rem]"
@@ -352,7 +378,9 @@
         >
       </div>
 
-      <div class="flex justify-center gap-20 mb-20">
+      <div
+        class="flex flex-col w-max mx-auto text-center gap-10 justify-center md:grid md:grid-cols-2 md:gap-x-20 lg:text-left lg:grid-cols-4 lg:gap-10 xl:gap-20 mb-20"
+      >
         <ul>
           <span class="capitalize text-sm text-white font-medium"
             >About us</span
@@ -498,6 +526,6 @@
       <small class="text-white text-center block"
         >&copy; Mercedes-Benz concept website by Nashiuz Zaman</small
       >
-    </footer> -->
+    </footer>
   </body>
 </html>
